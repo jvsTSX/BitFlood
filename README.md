@@ -2,7 +2,7 @@
 A brand new game for the Dreamcast VMU, initially meant to be an entry for DreamDisc 24 but oops... The main gameplay mechanic involves carry-bitshifts, the carry itself being represented by your cursor. But be quick! The stack automatically rises periodically, don't let a non-zero row reach the top otherwise, game over.
 
 ## Assembling
-Make sure you clone this entire repository and then run the waterbear assemble command on it, no additional requirements so far.
+Make sure you clone this entire repository and then run the waterbear assemble command on it, no additional requirements so far. You can get Waterbear here - https://github.com/wtetzner/waterbear
 - `waterbear assemble bitflood.asm -o bitflood.vms`
 
 ## Game Controls
