@@ -3,6 +3,7 @@ A brand new game for the Dreamcast VMU, initially meant to be an entry for Dream
 
 ## Assembling
 Make sure you clone this entire repository and then run the waterbear assemble command on it, no additional requirements so far.
+- `waterbear assemble bitflood.asm -o bitflood.vms`
 
 ## Game Controls
 - **Dpad Left/Right**: Shifts the current bit row pointed by the cursor
