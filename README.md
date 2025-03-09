@@ -15,3 +15,6 @@ Make sure you clone this entire repository and then run the waterbear assemble c
 ## Specifics
 - **Size**: 10 Blocks (of 512 bytes each)
 - **Current Version**: Dev 1
+
+## Emulation Support
+VM2 and Elysian VMU won't output the music correctly due to emulation issues with the Timer 1 Mode 3, but the game should work just fine, as it was developed and tested with EVMU.
