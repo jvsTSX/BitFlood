@@ -82,7 +82,9 @@ _ADVM1_SFX:
 	be #$FE, .SfxPlaying
 		st A1R_SFXPos        ; or else setup new SFX
 		mov #1, A1R_SFXWait
+		mov #$FE, A1R_SFXReq
 .SfxPlaying:
+		mov #%01110000, T1CNT ; force 2x mode
 		dec A1R_SFXWait
 		ld A1R_SFXWait
 	bnz .SfxExit
@@ -126,6 +128,9 @@ _ADVM1_SFX:
 		mov #$FF, A1R_SFXReq ; or else if set, disable SFXReq and exit
 	ret
 .SfxDone:
+		ld T1CNT ; retrigger timer 1
+		mov #0, T1CNT
+		st T1CNT
 		inc A1R_SFXPos
 .SfxExit
 	ret
